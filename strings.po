@@ -1475,7 +1475,7 @@ msgstr "Эта постройка работает нормально"
 #. STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT"
 msgid "when an incorrect substance was piped into it"
-msgstr "когда некорректное вещество поступает в него"
+msgstr ", когда некорректное вещество поступает в него"
 
 #. STRINGS.BUILDINGS.DAMAGESOURCES.BUILDING_OVERHEATED
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.BUILDING_OVERHEATED"
