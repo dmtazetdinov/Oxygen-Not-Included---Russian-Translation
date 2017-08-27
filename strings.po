@@ -16825,12 +16825,12 @@ msgstr "Производит +{0} тепла"
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_AIRCONDITIONER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_AIRCONDITIONER"
 msgid "Generates heat based on the volume, temperature, and specific heat capacity of the pumped gas\n\nCooling 1 Kg of room temperature oxygen will output {0} per second"
-msgstr "Генерирует тепло, учитывая объем, температуру и теплопроводность газа\n\nОжлаждение 1 кг газа комнатной температуры будет выделять {0} в секунду"
+msgstr "Генерирует тепло, учитывая объем, температуру и теплопроводность газа\n\nОхлаждение 1 кг газа комнатной температуры будет выделять {0} в секунду"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_LIQUIDCONDITIONER
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.HEATGENERATED_LIQUIDCONDITIONER"
 msgid "Generates heat based on the volume, temperature, and specific heat capacity of the pumped liquid\n\nCooling 1 Kg of room temperature water will output {0} per second"
-msgstr "Генерирует тепло, учитывая объем, температуру и теплопроводность жидкости\n\nОжлаждение 1 кг воды комнатной температуры будет выделять {0} в секунду"
+msgstr "Генерирует тепло, учитывая объем, температуру и теплопроводность жидкости\n\nОхлаждение 1 кг воды комнатной температуры будет выделять {0} в секунду"
 
 #. STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ITEM_TEMPERATURE_ADJUST
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.TOOLTIPS.ITEM_TEMPERATURE_ADJUST"
