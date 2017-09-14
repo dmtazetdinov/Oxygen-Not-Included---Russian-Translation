@@ -20,7 +20,7 @@ msgstr "Ограничения доступа"
 #. STRINGS.BUILDING.STATUSITEMS.ACCESS_CONTROL.ACTIVE.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ACCESS_CONTROL.ACTIVE.TOOLTIP"
 msgid "Some Duplicants are prohibited from passing through this door by the current access settings"
-msgstr "Некоторым Дупликантам запрещено использовать проход через эту дверь в соответствии с настройками доступа"
+msgstr "Некоторым Дупликантам запрещено проходить через эту дверь в соответствии с настройками доступа"
 
 #. STRINGS.BUILDING.STATUSITEMS.ACCESS_CONTROL.OFFLINE.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.ACCESS_CONTROL.OFFLINE.NAME"
@@ -114,23 +114,23 @@ msgstr "Все батареи заряжены до порогового зна�
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.NAME"
-msgid "Bottler Delivery: On"
+msgid "Autobottling: On"
 msgstr "Автодоставка"
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.ALLOWED.TOOLTIP"
-msgid "Duplicants may fetch bottled liquid from bottling stations to bring to this location"
-msgstr "Дупликанты будут доставлять сюда бутилированную жидкость непосредственно из бутилятора"
+msgid "Duplicants may specifically fetch liquid from Liquid Bottlers to bring to this location"
+msgstr "Дупликанты могут доставлять сюда жидкость непосредственно из бутилятора"
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.NAME"
-msgid "Bottler Delivery: Off"
+msgid "Autobottling: Off"
 msgstr "Нет автодоставки"
 
 #. STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.TOOLTIP
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BOTTLE_EMPTIER.DENIED.TOOLTIP"
-msgid "Duplicants may not fetch bottled liquid from bottling stations to bring to this location"
-msgstr "Дупликантам не разрешено доставлять сюда бутилированную жидкость непосредственно из бутилятора"
+msgid "Duplicants may not specifically fetch liquid from Liquid Bottlers to bring to this location"
+msgstr "Дупликанты не могут доставлять сюда жидкость непосредственно из бутилятора"
 
 #. STRINGS.BUILDING.STATUSITEMS.BROKEN.NAME
 msgctxt "STRINGS.BUILDING.STATUSITEMS.BROKEN.NAME"
@@ -1602,6 +1602,31 @@ msgctxt "STRINGS.BUILDING.STATUSITEMS.WORKING.TOOLTIP"
 msgid "This building is working as intended"
 msgstr "Эта постройка работает нормально"
 
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.NAME
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.NAME"
+msgid "Disable Autodisinfect"
+msgstr "Отключить дезинфекцию"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.DISABLE_AUTODISINFECT.TOOLTIP"
+msgid "Do not automatically disinfect this building"
+msgstr "Не дезинфицировать автоматически эту постройку"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.NAME
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.NAME"
+msgid "Enable Autodisinfect"
+msgstr "Включить дезинфекцию"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.ENABLE_AUTODISINFECT.TOOLTIP"
+msgid "Automatically disinfect this building when it becomes contaminated"
+msgstr "Автоматически дезинфицировать эту постройку, когда она загрязняется"
+
+#. STRINGS.BUILDINGS.AUTODISINFECTABLE.NO_DISEASE.TOOLTIP
+msgctxt "STRINGS.BUILDINGS.AUTODISINFECTABLE.NO_DISEASE.TOOLTIP"
+msgid "This building is clean"
+msgstr "Эта постройка чистая"
+
 #. STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT
 msgctxt "STRINGS.BUILDINGS.DAMAGESOURCES.BAD_INPUT_ELEMENT"
 msgid "receiving an incorrect substance"
@@ -2719,8 +2744,8 @@ msgstr "Очистители руды дезинфицируют свежесо�
 
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.EFFECT"
-msgid "Kills all <style=\"disease\">Germs</style> present on raw <style=\"RawMineral\">ore</style>."
-msgstr "Убивает все <style=\"disease\">Микробы</style>, находящиеся на поверхности <style=\"RawMineral\">Руды</style>."
+msgid "Kills a significant amount of <style=\"disease\">Germs</style> present on raw <style=\"RawMineral\">ore</style>."
+msgstr "Убивает огромное количество <style=\"disease\">Микробов</style>, находящихся на поверхности <style=\"RawMineral\">Руды</style>."
 
 #. STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.ORESCRUBBER.NAME"
@@ -2810,7 +2835,7 @@ msgstr "Механизированный шлюз с такой же функц�
 #. STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.EFFECT"
 msgid "Blocks <style=\"liquid\">Liquid</style> and <style=\"gas\">Gas</style> flow, maintaining pressure between areas.\n\nSets Duplicant Access Permissions for area restriction.\n\nFunctions as a Manual Airlock when no <style=\"power\">Power</style> is available."
-msgstr "Блокирует потоки <style=\"liquid\">Жидкости</style> и <style=\"gas\">Газа</style>, поддерживая атмосферное давление между зонами.\n\nУстанавливает разрешения доступа к зонам.\n\nФункционирует как ручной шлюз, когда нет доступа к <style=\"power\">Электричеству</style."
+msgstr "Блокирует потоки <style=\"liquid\">Жидкости</style> и <style=\"gas\">Газа</style>, поддерживая атмосферное давление между зонами.\n\nУстанавливает разрешения доступа к зонам.\n\nФункционирует как ручной шлюз, когда нет доступа к <style=\"power\">Электричеству</style>."
 
 #. STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.PRESSUREDOOR.NAME"
@@ -2900,7 +2925,7 @@ msgstr "Посредственная скульптура"
 #. STRINGS.BUILDINGS.PREFABS.SCULPTURE.DESC
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCULPTURE.DESC"
 msgid "Duplicants with high art skill will produce better, more decorative sculptures."
-msgstr "Дупликанты с более высоким атрибутом творчества произведут скульптуры лучшего качества и декоративной ценности."
+msgstr "Дупликанты с более высоким навыком творчества произведут скульптуры лучшего качества и декоративной ценности."
 
 #. STRINGS.BUILDINGS.PREFABS.SCULPTURE.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.SCULPTURE.EFFECT"
@@ -3054,8 +3079,8 @@ msgstr "Распространение микробов может быть ум
 
 #. STRINGS.BUILDINGS.PREFABS.WASHBASIN.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.WASHBASIN.EFFECT"
-msgid "Removes some <style=\"disease\">Germs</style> from Duplicants.\n\nDuplicants use Wash Basins when passing by in the selected direction."
-msgstr "Удаляет некоторое количество <style=\"disease\">Микробов</style> с Дупликантов.\n\nДупликанты будут использовать умывальники, проходя мимо них в заданном направлении."
+msgid "Removes some <style=\"disease\">Germs</style> from Duplicants.\n\nDuplicants use Wash Basins when passing by in the selected direction only if they have germs on them."
+msgstr "Удаляет некоторое количество <style=\"disease\">Микробов</style> с Дупликантов.\n\nДупликанты будут использовать умывальники, проходя мимо них в заданном направлении, только если на них есть микробы."
 
 #. STRINGS.BUILDINGS.PREFABS.WASHBASIN.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.WASHBASIN.NAME"
@@ -3069,8 +3094,8 @@ msgstr "Чистая вода - необходимый ресурс для по�
 
 #. STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.EFFECT
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.EFFECT"
-msgid "Uses <style=\"misc\">Sand</style> to purify <style=\"liquid\">Polluted Water</style>."
-msgstr "Использует <style=\"misc\">Песок</style>, чтобы очистить <style=\"liquid\">Загрязненную воду</style>."
+msgid "Uses <style=\"misc\">Sand</style> to filter <style=\"liquid\">Polluted Water</style>.\n\nTransfers a portion of disease to the Polluted Dirt."
+msgstr "Использует <style=\"misc\">Песок</style>, чтобы отфильтровать <style=\"liquid\">Загрязненную воду</style>.\n\nПереносит часть болезни в загрязненную землю."
 
 #. STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.NAME
 msgctxt "STRINGS.BUILDINGS.PREFABS.WATERPURIFIER.NAME"
@@ -3590,7 +3615,7 @@ msgstr "Бальзамная лилия производит <style=\"medicine\"
 #. STRINGS.CREATURES.SPECIES.SWAMPLILY.DOMESTICATEDDESC
 msgctxt "STRINGS.CREATURES.SPECIES.SWAMPLILY.DOMESTICATEDDESC"
 msgid "This plant produces medicinal <style=\"medicine\">Balm Lily Flowers</style>."
-msgstr "Это растение производит style=\"medicine\">Цветы бальзамной лилии</style>, используемые в медицине."
+msgstr "Это растение производит <style=\"medicine\">Цветы бальзамной лилии</style>, используемые в медицине."
 
 #. STRINGS.CREATURES.SPECIES.SWAMPLILY.NAME
 msgctxt "STRINGS.CREATURES.SPECIES.SWAMPLILY.NAME"
@@ -4375,7 +4400,7 @@ msgstr "Рост этого растения возобновится при у�
 #. STRINGS.CREATURES.STATUSITEMS.WRONGATMOSPHERE.NAME
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGATMOSPHERE.NAME"
 msgid "    • Atmosphere"
-msgstr "    • Подходящая атмосфера"
+msgstr "    • Атмосфера"
 
 #. STRINGS.CREATURES.STATUSITEMS.WRONGATMOSPHERE.TOOLTIP
 msgctxt "STRINGS.CREATURES.STATUSITEMS.WRONGATMOSPHERE.TOOLTIP"
@@ -4689,8 +4714,8 @@ msgstr "Сила иммунной системы"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_MODIFIER
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_MODIFIER"
-msgid "{0} Immune System Regen"
-msgstr "{0} к регенерации иммунной системы"
+msgid "{0} Immunity Regen"
+msgstr "{0} к регенерации иммунитета"
 
 #. STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_STAT
 msgctxt "STRINGS.DUPLICANTS.ATTRIBUTES.IMMUNITY.BOOST_STAT"
@@ -6110,7 +6135,7 @@ msgstr "Мгновенно вылечился от <style=\"disease\">{0}</style
 #. STRINGS.DUPLICANTS.DISEASES.DEATH_SYMPTOM
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DEATH_SYMPTOM"
 msgid "Death in {0}"
-msgstr "Причина смерти: {0}"
+msgstr "Смерть через: {0}"
 
 #. STRINGS.DUPLICANTS.DISEASES.DEATH_SYMPTOM_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DEATH_SYMPTOM_TOOLTIP"
@@ -6130,12 +6155,12 @@ msgstr "Дупликант заразился микробами, вдыхая �
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES"
 msgid "Dies"
-msgstr "Умирает"
+msgstr "Погибают"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_ON
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_ON"
 msgid "Killed by:"
-msgstr "Умирает в:"
+msgstr "Погибают в:"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_ON_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_ON_TOOLTIP"
@@ -6145,12 +6170,12 @@ msgstr "Контакт с этими субстанциями со времен�
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_QUICKLY
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_QUICKLY"
 msgid "Disinfected"
-msgstr "Дезинфицировано"
+msgstr "Дезинфицированы"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_QUICKLY_ON
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_QUICKLY_ON"
 msgid "Disinfected by:"
-msgstr "Дезинфицируется:"
+msgstr "Дезинфицируются в:"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_QUICKLY_ON_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_QUICKLY_ON_TOOLTIP"
@@ -6165,17 +6190,17 @@ msgstr "Половина микробов будет умирать каждые
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_SLOWLY
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_SLOWLY"
 msgid "Inhibited"
-msgstr "Замедлен"
+msgstr "Замедлены"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_SLOWLY_ON
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_SLOWLY_ON"
 msgid "Inhibited by:"
-msgstr "Замедляется:"
+msgstr "Замедляются в:"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_SLOWLY_ON_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_SLOWLY_ON_TOOLTIP"
 msgid "Contact with these substances will slowly reduce germ numbers"
-msgstr "Контакт с этими субстанциями медленно уменьшит количество микробов"
+msgstr "Контакт с этими субстанциями медленно уменьшает количество микробов"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_SLOWLY_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.DIES_SLOWLY_TOOLTIP"
@@ -6225,12 +6250,12 @@ msgstr "    • {0}"
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.NEUTRAL
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.NEUTRAL"
 msgid "Survives"
-msgstr "Выживает"
+msgstr "Выживают"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.NEUTRAL_ON
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.NEUTRAL_ON"
 msgid "Survives in:"
-msgstr "Выживает в:"
+msgstr "Выживают в:"
 
 #. STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.NEUTRAL_ON_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.DESCRIPTORS.INFO.NEUTRAL_ON_TOOLTIP"
@@ -6460,7 +6485,7 @@ msgstr "Сильный кашель"
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.COUGH_SYMPTOM_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.COUGH_SYMPTOM_TOOLTIP"
 msgid "Duplicants periodically cough up a lump of infectious slime from their lungs, producing additional germs"
-msgstr "Дупликанты периодически будут выкашливать зараженную слизь из их легких, производя дополнительные микробы"
+msgstr "Дупликанты периодически выкашливают зараженную слизь из легких, производя дополнительные микробы"
 
 #. STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DESCRIPTION
 msgctxt "STRINGS.DUPLICANTS.DISEASES.SLIMELUNG.DESCRIPTION"
@@ -6974,8 +6999,8 @@ msgstr "Низкий уровень кислорода"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.LOWOXYGEN.TOOLTIP"
-msgid "The air quite thin in this area"
-msgstr "Воздух в этой области довольно разреженный"
+msgid "The air is thin in this area"
+msgstr "Воздух в этой области разреженный"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.MEDICALCOT.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.MEDICALCOT.NAME"
@@ -7220,7 +7245,7 @@ msgstr "Серьезные ранения Дупликанта значител�
 #. STRINGS.DUPLICANTS.MODIFIERS.SKILLLEVEL.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SKILLLEVEL.NAME"
 msgid "Skill Level"
-msgstr "Уровень навыка"
+msgstr "Уровень характеристики"
 
 #. STRINGS.DUPLICANTS.MODIFIERS.SLEEP.NAME
 msgctxt "STRINGS.DUPLICANTS.MODIFIERS.SLEEP.NAME"
@@ -8442,6 +8467,16 @@ msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DIGGING.TOOLTIP"
 msgid "This Duplicant is excavating raw resources"
 msgstr "Этот Дупликант выкапывает необработанные ресурсы"
 
+#. STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.NAME
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.NAME"
+msgid "Disinfecting {Target}"
+msgstr "Дезинфицирует {Target}"
+
+#. STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.TOOLTIP
+msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DISINFECTING.TOOLTIP"
+msgid "This Duplicant is disinfecting {Target}"
+msgstr "Этот Дупликант дезинфицирует {Target}"
+
 #. STRINGS.DUPLICANTS.STATUSITEMS.DOCTOR.NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.DOCTOR.NAME"
 msgid "Aiding Duplicant"
@@ -9464,8 +9499,8 @@ msgstr "Нервный"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_NAME
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_NAME"
-msgid "Stressed"
-msgstr "Нервный"
+msgid "High stress"
+msgstr "Высокий стресс"
 
 #. STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_TOOLTIP
 msgctxt "STRINGS.DUPLICANTS.STATUSITEMS.STRESSED.NOTIFICATION_TOOLTIP"
@@ -9859,7 +9894,7 @@ msgstr "Деревенщина"
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.DESC"
-msgid "This duplicant was a talented opera singer and a snorkeling instructor."
+msgid "This Duplicant was a talented opera singer and a snorkeling instructor."
 msgstr "Этот Дупликант был талантливым оперным певцом и инструктором по подводному плаванию."
 
 #. STRINGS.DUPLICANTS.TRAITS.DEEPERDIVERSLUNGS.NAME
@@ -10114,17 +10149,17 @@ msgstr "\n• Отказывается выполнять работу: {0}"
 
 #. STRINGS.DUPLICANTS.TRAITS.REGENERATION.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.REGENERATION.DESC"
-msgid "This duplicant constantly regenerated health."
+msgid "This Duplicant is constantly regenerating health."
 msgstr "Этот Дупликант очень быстро восстанавливает свое здоровье."
 
 #. STRINGS.DUPLICANTS.TRAITS.REGENERATION.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.REGENERATION.NAME"
-msgid "Regeneration"
+msgid "Regenerative"
 msgstr "Регенерирующий"
 
 #. STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.DESC"
-msgid "This duplicant is incredibly strong."
+msgid "This Duplicant is incredibly strong."
 msgstr "Этот Дупликант невероятно сильный."
 
 #. STRINGS.DUPLICANTS.TRAITS.ROCKCRUSHER.NAME
@@ -10204,8 +10239,8 @@ msgstr "Природный иммунитет"
 
 #. STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.DESC
 msgctxt "STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.DESC"
-msgid "This duplicant has a positive outlook on life."
-msgstr "У Этого Дупликанта позитивный взгляд на жизнь."
+msgid "This Duplicant has an unwaveringly positive outlook on life."
+msgstr "У этого Дупликанта чрезмерно позитивный взгляд на жизнь."
 
 #. STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.NAME
 msgctxt "STRINGS.DUPLICANTS.TRAITS.SUNNYDISPOSITION.NAME"
@@ -10275,7 +10310,7 @@ msgstr "Хлорная известь"
 #. STRINGS.ELEMENTS.BOTTLEDWATER.DESC
 msgctxt "STRINGS.ELEMENTS.BOTTLEDWATER.DESC"
 msgid "(H<sub>2</sub>O) Clean <style=\"liquid\">Water</style>, prepped for transport."
-msgstr "(H<sub>2</sub>O) Очищенная <style=\"liquid\">Вода</style>, подготовленная к транспортировке."
+msgstr "<style=\"liquid\">Вода</style> (H<sub>2</sub>O), очищенная и подготовленная к транспортировке."
 
 #. STRINGS.ELEMENTS.BOTTLEDWATER.NAME
 msgctxt "STRINGS.ELEMENTS.BOTTLEDWATER.NAME"
@@ -10300,7 +10335,7 @@ msgstr "Керамика"
 #. STRINGS.ELEMENTS.CARBON.DESC
 msgctxt "STRINGS.ELEMENTS.CARBON.DESC"
 msgid "(C) Coal is a combustible fossil fuel composed of carbon.\n\nIt is useful in <style=\"power\">Power</style> production."
-msgstr "(C) Уголь - это горючее ископаемое топливо, состоящее из углерода.\n\nОн используется для производства <style=\"power\">Электричества</style>."
+msgstr "Уголь (C) - это горючее ископаемое топливо, состоящее из углерода.\n\nОн используется для производства <style=\"power\">Электричества</style>."
 
 #. STRINGS.ELEMENTS.CARBON.NAME
 msgctxt "STRINGS.ELEMENTS.CARBON.NAME"
@@ -10310,7 +10345,7 @@ msgstr "Уголь"
 #. STRINGS.ELEMENTS.CARBONDIOXIDE.DESC
 msgctxt "STRINGS.ELEMENTS.CARBONDIOXIDE.DESC"
 msgid "(CO<sub>2</sub>) Carbon Dioxide toxic, atomically heavy chemical compound in a <style=\"gas\">Gaseous</style> state.\n\nIt tends to sink below other gases."
-msgstr "(CO<sub>2</sub>) Углекислый газ - токсичный, атомарно тяжелый химический компонент в <style=\"gas\">Газообразном</style> состоянии.\n\nОн, как правило, опускается ниже других газов."
+msgstr "Углекислый газ (CO<sub>2</sub>) - токсичный, атомарно тяжелый химический компонент в <style=\"gas\">Газообразном</style> состоянии.\n\nОн, как правило, опускается ниже других газов."
 
 #. STRINGS.ELEMENTS.CARBONDIOXIDE.NAME
 msgctxt "STRINGS.ELEMENTS.CARBONDIOXIDE.NAME"
@@ -10370,7 +10405,7 @@ msgstr "Глина"
 #. STRINGS.ELEMENTS.CONTAMINATEDOXYGEN.DESC
 msgctxt "STRINGS.ELEMENTS.CONTAMINATEDOXYGEN.DESC"
 msgid "(O<sub>2</sub>) Polluted Oxygen is dirty, unfiltered air.\n\nIt is breathable."
-msgstr "(O<sub>2</sub>) Загрязненный кислород - это грязный, нефильтрованный воздух.\n\nМожно дышать."
+msgstr "Загрязненный кислород (O<sub>2</sub>) - это грязный, нефильтрованный воздух.\n\nМожно дышать."
 
 #. STRINGS.ELEMENTS.CONTAMINATEDOXYGEN.NAME
 msgctxt "STRINGS.ELEMENTS.CONTAMINATEDOXYGEN.NAME"
@@ -10420,7 +10455,7 @@ msgstr "Нефть"
 #. STRINGS.ELEMENTS.CRUSHEDICE.DESC
 msgctxt "STRINGS.ELEMENTS.CRUSHEDICE.DESC"
 msgid "(H<sub>2</sub>0) A slush of crushed, semi-solid ice."
-msgstr "(H<sub>2</sub>0) Колотый лед - смесь крошеного льда и воды."
+msgstr "Колотый лед (H<sub>2</sub>0) - смесь крошеного льда и воды."
 
 #. STRINGS.ELEMENTS.CRUSHEDICE.NAME
 msgctxt "STRINGS.ELEMENTS.CRUSHEDICE.NAME"
@@ -10440,7 +10475,7 @@ msgstr "Дробленый камень"
 #. STRINGS.ELEMENTS.CUPRITE.DESC
 msgctxt "STRINGS.ELEMENTS.CUPRITE.DESC"
 msgid "(Cu<sub>2</sub>0) Copper Ore is a conductive <style=\"RawMetal\">Metal</style>.\n\nIt is suitable for building <style=\"power\">Power</style> systems."
-msgstr "(Cu<sub>2</sub>0) Медная руда - это проводящий <style=\"RawMetal\">Металл</style>.\n\nМедная руда отлично подходит для создания <style=\"power\">Электрических</style> сетей."
+msgstr "Медная руда (Cu<sub>2</sub>0) - это проводящий <style=\"RawMetal\">Металл</style>.\n\nМедная руда отлично подходит для создания <style=\"power\">Электрических</style> сетей."
 
 #. STRINGS.ELEMENTS.CUPRITE.NAME
 msgctxt "STRINGS.ELEMENTS.CUPRITE.NAME"
@@ -10535,7 +10570,7 @@ msgstr "Удобрение"
 #. STRINGS.ELEMENTS.FOOLSGOLD.DESC
 msgctxt "STRINGS.ELEMENTS.FOOLSGOLD.DESC"
 msgid "(FeS<sub>2</sub>) Pyrite is a conductive <style=\"RawMetal\">Metal</style>.\n\nAlso known as \"Fool's Gold\", is suitable for building <style=\"power\">Power</style> systems."
-msgstr "(FeS<sub>2</sub>) Пирит - это проводящий <style=\"RawMetal\">Металл</style>.\n\nПирит, также известный как \"Золото дураков\" подходит для создания <style=\"power\">Электрических</style> сетей."
+msgstr "Пирит (FeS<sub>2</sub>) - это проводящий <style=\"RawMetal\">Металл</style>.\n\nПирит, также известный как \"Золото дураков\" подходит для создания <style=\"power\">Электрических</style> сетей."
 
 #. STRINGS.ELEMENTS.FOOLSGOLD.NAME
 msgctxt "STRINGS.ELEMENTS.FOOLSGOLD.NAME"
@@ -10650,7 +10685,7 @@ msgstr "Водород"
 #. STRINGS.ELEMENTS.ICE.DESC
 msgctxt "STRINGS.ELEMENTS.ICE.DESC"
 msgid "(H<sub>2</sub>0) Ice is clean water frozen into a <style=\"solid\">Solid</style> state."
-msgstr "(H<sub>2</sub>0) Лед - это чистая вода, замороженная до <style=\"solid\">Твердого</style> состояния."
+msgstr "Лед (H<sub>2</sub>0) - это чистая вода, замороженная до <style=\"solid\">Твердого</style> состояния."
 
 #. STRINGS.ELEMENTS.ICE.NAME
 msgctxt "STRINGS.ELEMENTS.ICE.NAME"
@@ -10690,7 +10725,7 @@ msgstr "Железо"
 #. STRINGS.ELEMENTS.IRONINGOT.DESC
 msgctxt "STRINGS.ELEMENTS.IRONINGOT.DESC"
 msgid "(Fe) Iron is refined <style=\"RawMetal\">Iron Ore</style>."
-msgstr "(Fe) Железо - это переработанная <style=\"RawMetal\">Железная руда</style>."
+msgstr "Железо (Fe) - это переработанная <style=\"RawMetal\">Железная руда</style>."
 
 #. STRINGS.ELEMENTS.IRONINGOT.NAME
 msgctxt "STRINGS.ELEMENTS.IRONINGOT.NAME"
@@ -10700,7 +10735,7 @@ msgstr "Железо"
 #. STRINGS.ELEMENTS.IRONORE.DESC
 msgctxt "STRINGS.ELEMENTS.IRONORE.DESC"
 msgid "(Fe) Iron Ore is a soft <style=\"RawMetal\">Metal</style>.\n\nIt is suitable for building <style=\"power\">Power</style> systems."
-msgstr "(Fe) Железная руда - мягкий <style=\"RawMetal\">Металл</style>.\n\nОна отлично подходит для создания <style=\"power\">Электрических</style> сетей."
+msgstr "Железная руда (Fe) - мягкий <style=\"RawMetal\">Металл</style>.\n\nОна отлично подходит для создания <style=\"power\">Электрических</style> сетей."
 
 #. STRINGS.ELEMENTS.IRONORE.NAME
 msgctxt "STRINGS.ELEMENTS.IRONORE.NAME"
@@ -10720,7 +10755,7 @@ msgstr "Абиссалит"
 #. STRINGS.ELEMENTS.LIQUIDCARBONDIOXIDE.DESC
 msgctxt "STRINGS.ELEMENTS.LIQUIDCARBONDIOXIDE.DESC"
 msgid "(CO<sub>2</sub>) Carbon Dioxide is a toxic chemical compound. This selection is currently in a <style=\"liquid\">Liquid</style> state."
-msgstr "(CO<sub>2</sub>) Углекислый газ - это токсичное химическое соединение. Находится в <style=\"liquid\">Жидком</style> состоянии."
+msgstr "Углекислый газ (CO<sub>2</sub>) - это токсичное химическое соединение. Находится в <style=\"liquid\">Жидком</style> состоянии."
 
 #. STRINGS.ELEMENTS.LIQUIDCARBONDIOXIDE.NAME
 msgctxt "STRINGS.ELEMENTS.LIQUIDCARBONDIOXIDE.NAME"
@@ -10750,7 +10785,7 @@ msgstr "Водород"
 #. STRINGS.ELEMENTS.LIQUIDMETHANE.DESC
 msgctxt "STRINGS.ELEMENTS.LIQUIDMETHANE.DESC"
 msgid "(CH<sub>4</sub>) Methane is an alkane.\n\nThis selection is in a <style=\"liquid\">Liquid</style> state."
-msgstr "(CH<sub>4</sub>) Метан - это алкан.\n\nНаходится в <style=\"liquid\">Жидком</style> состоянии."
+msgstr "Метан (CH<sub>4</sub>) - это алкан.\n\nНаходится в <style=\"liquid\">Жидком</style> состоянии."
 
 #. STRINGS.ELEMENTS.LIQUIDMETHANE.NAME
 msgctxt "STRINGS.ELEMENTS.LIQUIDMETHANE.NAME"
@@ -10760,7 +10795,7 @@ msgstr "Метан"
 #. STRINGS.ELEMENTS.LIQUIDOXYGEN.DESC
 msgctxt "STRINGS.ELEMENTS.LIQUIDOXYGEN.DESC"
 msgid "(O<sub>2</sub>) Oxygen is a breathable chemical.\n\nThis selection is in a <style=\"liquid\">Liquid</style> state."
-msgstr "(O<sub>2</sub>) Кислород - пригодный для дыхания химикат.\n\nНаходится в <style=\"liquid\">Жидком</style> состоянии."
+msgstr "Кислород (O<sub>2</sub>) - пригодный для дыхания химикат.\n\nНаходится в <style=\"liquid\">Жидком</style> состоянии."
 
 #. STRINGS.ELEMENTS.LIQUIDOXYGEN.NAME
 msgctxt "STRINGS.ELEMENTS.LIQUIDOXYGEN.NAME"
@@ -10780,7 +10815,7 @@ msgstr "Фосфор"
 #. STRINGS.ELEMENTS.LIQUIDPROPANE.DESC
 msgctxt "STRINGS.ELEMENTS.LIQUIDPROPANE.DESC"
 msgid "(C<sub>3</sub>H<sub>8</sub>) Propane is an alkane in a <style=\"liquid\">Liquid</style> state.\n\nIt is useful in <style=\"power\">Power</style> production."
-msgstr "(C<sub>3</sub>H<sub>8</sub>) Пропан - это алкан в <style=\"liquid\">Жидкой</style> состоянии.\n\nПропан полезен в выработке <style=\"power\">Электричества</style>."
+msgstr "Пропан (C<sub>3</sub>H<sub>8</sub>) - это алкан в <style=\"liquid\">Жидкой</style> состоянии.\n\nПропан полезен в выработке <style=\"power\">Электричества</style>."
 
 #. STRINGS.ELEMENTS.LIQUIDPROPANE.NAME
 msgctxt "STRINGS.ELEMENTS.LIQUIDPROPANE.NAME"
@@ -10820,7 +10855,7 @@ msgstr "Ртуть"
 #. STRINGS.ELEMENTS.METHANE.DESC
 msgctxt "STRINGS.ELEMENTS.METHANE.DESC"
 msgid "(CH<sub>4</sub>) Natural Gas is a mixture of various alkanes in a <style=\"gas\">Gaseous</style> state.\n\nIt is useful in <style=\"power\">Power</style> production."
-msgstr "(CH<sub>4</sub>) Природный газ представляет собой смесь различных алканов в <style=\"gas\">Газообразном</style> состоянии.\n\nОн используется для производства <style=\"power\">Электричества</style>."
+msgstr "Природный газ (CH<sub>4</sub>) - представляет собой смесь различных алканов в <style=\"gas\">Газообразном</style> состоянии.\n\nОн используется для производства <style=\"power\">Электричества</style>."
 
 #. STRINGS.ELEMENTS.METHANE.NAME
 msgctxt "STRINGS.ELEMENTS.METHANE.NAME"
@@ -10900,7 +10935,7 @@ msgstr "Вольфрам"
 #. STRINGS.ELEMENTS.MOLTENTUNGSTENDISELENIDE.DESC
 msgctxt "STRINGS.ELEMENTS.MOLTENTUNGSTENDISELENIDE.DESC"
 msgid "(WSe<sub>2</sub>) Tungsten Diselenide is an inorganic <style=\"RawMetal\">Metal</style> compound heated into a <style=\"liquid\">Liquid</style> state."
-msgstr "(WSe<sub>2</sub>) Диселенид вольфрама - это неорганический сплав <style=\"RawMetal\">Металла</style>, нагретый до <style=\"liquid\">Жидкого</style> состояния."
+msgstr "Диселенид вольфрама (WSe<sub>2</sub>) - это неорганический сплав <style=\"RawMetal\">Металла</style>, нагретый до <style=\"liquid\">Жидкого</style> состояния."
 
 #. STRINGS.ELEMENTS.MOLTENTUNGSTENDISELENIDE.NAME
 msgctxt "STRINGS.ELEMENTS.MOLTENTUNGSTENDISELENIDE.NAME"
@@ -10920,7 +10955,7 @@ msgstr "Обсидиан"
 #. STRINGS.ELEMENTS.OXYGEN.DESC
 msgctxt "STRINGS.ELEMENTS.OXYGEN.DESC"
 msgid "(O<sub>2</sub>) Oxygen is an atomically lightweight and breathable <style=\"gas\">Gas</style>, necessary for sustaining life.\n\nIt tends to rise above other gases."
-msgstr "(O<sub>2</sub>) Кислород - это атомарно легкий, пригодный для дыхания <style=\"gas\">Газ</style>, необходимый для поддержания жизни.\n\nЕму свойственно подниматься выше других газов."
+msgstr "Кислород (O<sub>2</sub>) - это атомарно легкий, пригодный для дыхания <style=\"gas\">Газ</style>, необходимый для поддержания жизни.\n\nЕму свойственно подниматься выше других газов."
 
 #. STRINGS.ELEMENTS.OXYGEN.NAME
 msgctxt "STRINGS.ELEMENTS.OXYGEN.NAME"
@@ -10930,7 +10965,7 @@ msgstr "Кислород"
 #. STRINGS.ELEMENTS.OXYROCK.DESC
 msgctxt "STRINGS.ELEMENTS.OXYROCK.DESC"
 msgid "(Ir<sub>3</sub>O<sub>2</sub>) Oxylite is a chemical compound that slowly emits breathable <style=\"oxygen\">Oxygen</style>.\n\nExcavating Oxylite increases its emission rate, but depletes the ore more rapidly."
-msgstr "(Ir<sub>3</sub>O<sub>2</sub>) Оксилит - это химическое соединение, которое медленно выделяет пригодный для дыхания <style=\"oxygen\">Кислород</style>.\n\nВ выкопанном состоянии быстрее выделяет кислород и расходуется."
+msgstr "Оксилит (Ir<sub>3</sub>O<sub>2</sub>) - это химическое соединение, которое медленно выделяет пригодный для дыхания <style=\"oxygen\">Кислород</style>.\n\nВ выкопанном состоянии быстрее выделяет кислород и расходуется."
 
 #. STRINGS.ELEMENTS.OXYROCK.NAME
 msgctxt "STRINGS.ELEMENTS.OXYROCK.NAME"
@@ -10940,7 +10975,7 @@ msgstr "Оксилит"
 #. STRINGS.ELEMENTS.PHOSPHATENODULES.DESC
 msgctxt "STRINGS.ELEMENTS.PHOSPHATENODULES.DESC"
 msgid "(PO<sup>3-</sup><sub>4</sub>) Nodules of sedimentary rock containing high concentrations of phosphate."
-msgstr "(PO<sup>3-</sup><sub>4</sub>) Фосфатный гравий - осадочная порода, содержащая большое число фосфатов."
+msgstr "Фосфатный гравий (PO<sup>3-</sup><sub>4</sub>) - осадочная порода, содержащая большое число фосфатов."
 
 #. STRINGS.ELEMENTS.PHOSPHATENODULES.NAME
 msgctxt "STRINGS.ELEMENTS.PHOSPHATENODULES.NAME"
@@ -10990,7 +11025,7 @@ msgstr "Тина"
 #. STRINGS.ELEMENTS.PROPANE.DESC
 msgctxt "STRINGS.ELEMENTS.PROPANE.DESC"
 msgid "(C<sub>3</sub>H<sub>8</sub>) Propane is a natural alkane <style=\"gas\">Gas</style>.\n\nIt is useful in <style=\"power\">Power</style> production."
-msgstr "(C<sub>3</sub>H<sub>8</sub>) Пропан - это природный алкан в состоянии <style=\"gas\">Газа</style>.\n\nОн используется в производстве <style=\"power\">Электричества</style>."
+msgstr "Пропан (C<sub>3</sub>H<sub>8</sub>) - это природный алкан в состоянии <style=\"gas\">Газа</style>.\n\nОн используется в производстве <style=\"power\">Электричества</style>."
 
 #. STRINGS.ELEMENTS.PROPANE.NAME
 msgctxt "STRINGS.ELEMENTS.PROPANE.NAME"
@@ -11070,7 +11105,7 @@ msgstr "Слизь"
 #. STRINGS.ELEMENTS.SNOW.DESC
 msgctxt "STRINGS.ELEMENTS.SNOW.DESC"
 msgid "(H<sub>2</sub>0) Snow is a mass of loose, crystalline ice particles.\n\nIt becomes <style=\"liquid\">Water</style> when melted."
-msgstr "(H<sub>2</sub>0) Снег - это сыпучие, кристаллические частицы льда.\n\nОн становится <style=\"liquid\">Водой</style> при плавлении."
+msgstr "Снег (H<sub>2</sub>0) - это сыпучие, кристаллические частицы льда.\n\nОн становится <style=\"liquid\">Водой</style> при плавлении."
 
 #. STRINGS.ELEMENTS.SNOW.NAME
 msgctxt "STRINGS.ELEMENTS.SNOW.NAME"
@@ -11080,7 +11115,7 @@ msgstr "Снег"
 #. STRINGS.ELEMENTS.SOLIDCARBONDIOXIDE.DESC
 msgctxt "STRINGS.ELEMENTS.SOLIDCARBONDIOXIDE.DESC"
 msgid "(CO<sub>2</sub>) Carbon Dioxide is a toxic compound in a <style=\"solid\">Solid</style> state."
-msgstr "(CO<sub>2</sub>) Углекислый газ - это токсичное соединение в <style=\"solid\">Твердом</style> состоянии."
+msgstr "Углекислый газ (CO<sub>2</sub>) - это токсичное соединение в <style=\"solid\">Твердом</style> состоянии."
 
 #. STRINGS.ELEMENTS.SOLIDCARBONDIOXIDE.NAME
 msgctxt "STRINGS.ELEMENTS.SOLIDCARBONDIOXIDE.NAME"
@@ -11120,7 +11155,7 @@ msgstr "Ртуть"
 #. STRINGS.ELEMENTS.SOLIDMETHANE.DESC
 msgctxt "STRINGS.ELEMENTS.SOLIDMETHANE.DESC"
 msgid "(CH<sub>4</sub>) Methane is an alkane in a <style=\"solid\">Solid</style> state."
-msgstr "(CH<sub>4</sub>) Метан - является алканом в <style=\"solid\">Твердом</style> состоянии."
+msgstr "Метан (CH<sub>4</sub>) - является алканом в <style=\"solid\">Твердом</style> состоянии."
 
 #. STRINGS.ELEMENTS.SOLIDMETHANE.NAME
 msgctxt "STRINGS.ELEMENTS.SOLIDMETHANE.NAME"
@@ -11130,7 +11165,7 @@ msgstr "Метан"
 #. STRINGS.ELEMENTS.SOLIDOXYGEN.DESC
 msgctxt "STRINGS.ELEMENTS.SOLIDOXYGEN.DESC"
 msgid "(O<sub>2</sub>) Oxygen is a breathable element in a <style=\"solid\">Solid</style> state."
-msgstr "(O<sub>2</sub>) Кислород - это пригодный для дыхания элемент в <style=\"solid\">Твердом</style> состоянии."
+msgstr "Кислород (O<sub>2</sub>) - это пригодный для дыхания элемент в <style=\"solid\">Твердом</style> состоянии."
 
 #. STRINGS.ELEMENTS.SOLIDOXYGEN.NAME
 msgctxt "STRINGS.ELEMENTS.SOLIDOXYGEN.NAME"
@@ -11140,7 +11175,7 @@ msgstr "Кислород"
 #. STRINGS.ELEMENTS.SOLIDPROPANE.DESC
 msgctxt "STRINGS.ELEMENTS.SOLIDPROPANE.DESC"
 msgid "(C<sub>3</sub>H<sub>8</sub>) Propane is a natural gas in a <style=\"solid\">Solid</style> state."
-msgstr "(C<sub>3</sub>H<sub>8</sub>) Пропан - это природный газ в <style=\"solid\">Твердом</style> состоянии."
+msgstr "Пропан (C<sub>3</sub>H<sub>8</sub>) - это природный газ в <style=\"solid\">Твердом</style> состоянии."
 
 #. STRINGS.ELEMENTS.SOLIDPROPANE.NAME
 msgctxt "STRINGS.ELEMENTS.SOLIDPROPANE.NAME"
@@ -11155,7 +11190,7 @@ msgstr "Газ"
 #. STRINGS.ELEMENTS.STATE.LIQUID
 msgctxt "STRINGS.ELEMENTS.STATE.LIQUID"
 msgid "Liquid"
-msgstr "Жидкий"
+msgstr "Жидкость"
 
 #. STRINGS.ELEMENTS.STATE.SOLID
 msgctxt "STRINGS.ELEMENTS.STATE.SOLID"
@@ -11170,7 +11205,7 @@ msgstr "Отсутствует"
 #. STRINGS.ELEMENTS.STEAM.DESC
 msgctxt "STRINGS.ELEMENTS.STEAM.DESC"
 msgid "(H<sub>2</sub>0) Steam is water that has been heated into a scalding <style=\"gas\">Gas</style>."
-msgstr "(H<sub>2</sub>0) Пар - это вода, нагретая до обжигающего <style=\"gas\">Газа</style>."
+msgstr "Пар (H<sub>2</sub>0) - это вода, нагретая до обжигающего <style=\"gas\">Газа</style>."
 
 #. STRINGS.ELEMENTS.STEAM.NAME
 msgctxt "STRINGS.ELEMENTS.STEAM.NAME"
@@ -11230,7 +11265,7 @@ msgstr "Вольфрам"
 #. STRINGS.ELEMENTS.TUNGSTENDISELENIDE.DESC
 msgctxt "STRINGS.ELEMENTS.TUNGSTENDISELENIDE.DESC"
 msgid "(WSe<sub>2</sub>) Tungsten Diselenide is an inorganic <style=\"RawMetal\">Metal</style> compound with a crystalline structure.\n\nIt is suitable for building <style=\"power\">Power</style> systems."
-msgstr "(WSe<sub>2</sub>) Диселенид вольфрама - это неорганический композит <style=\"RawMetal\">Металла</style> с кристаллической структурой.\n\nОн отлично подходит для строительства <style=\"power\">Электрических</style> систем."
+msgstr "Диселенид вольфрама (WSe<sub>2</sub>) - это неорганический композит <style=\"RawMetal\">Металла</style> с кристаллической структурой.\n\nОн отлично подходит для строительства <style=\"power\">Электрических</style> систем."
 
 #. STRINGS.ELEMENTS.TUNGSTENDISELENIDE.NAME
 msgctxt "STRINGS.ELEMENTS.TUNGSTENDISELENIDE.NAME"
@@ -11240,7 +11275,7 @@ msgstr "Диселенид вольфрама"
 #. STRINGS.ELEMENTS.TUNGSTENDISELENIDEGAS.DESC
 msgctxt "STRINGS.ELEMENTS.TUNGSTENDISELENIDEGAS.DESC"
 msgid "(WSe<sub>2</sub>) Tungsten Diselenide is a superheated <style=\"RawMetal\">Metal</style> compound in a <style=\"gas\">Gaseous</style> state."
-msgstr "(WSe<sub>2</sub>) Диселенид вольфрама - это перегретый композит <style=\"RawMetal\">Металла</style> в состоянии <style=\"gas\">Газа</style>."
+msgstr "Диселенид вольфрама (WSe<sub>2</sub>) - это перегретый композит <style=\"RawMetal\">Металла</style> в состоянии <style=\"gas\">Газа</style>."
 
 #. STRINGS.ELEMENTS.TUNGSTENDISELENIDEGAS.NAME
 msgctxt "STRINGS.ELEMENTS.TUNGSTENDISELENIDEGAS.NAME"
@@ -11290,7 +11325,7 @@ msgstr "Пустота"
 #. STRINGS.ELEMENTS.WATER.DESC
 msgctxt "STRINGS.ELEMENTS.WATER.DESC"
 msgid "(H<sub>2</sub>0) Clean <style=\"liquid\">Water</style>, suitable for consumption."
-msgstr "(H<sub>2</sub>0) Чистая вода - обыкновенная <style=\"liquid\">Вода</style>, пригодна для потребления."
+msgstr "Чистая вода (H<sub>2</sub>0) - обыкновенная <style=\"liquid\">Вода</style>, пригодна для потребления."
 
 #. STRINGS.ELEMENTS.WATER.NAME
 msgctxt "STRINGS.ELEMENTS.WATER.NAME"
@@ -11300,7 +11335,7 @@ msgstr "Вода"
 #. STRINGS.ELEMENTS.WOLFRAMITE.DESC
 msgctxt "STRINGS.ELEMENTS.WOLFRAMITE.DESC"
 msgid "((Fe,Mn)WO<sub>4</sub>) Wolframite is a dense <style=\"RawMetal\">Metallic</style> element in a <style=\"solid\">Solid</style> state.\n\nIt is a source of <style=\"RawMetal\">Tungsten</style> and is suitable for building <style=\"power\">Power</style> systems."
-msgstr "((Fe,Mn)WO<sub>4</sub>) Вольфрамит - это плотный <style=\"RawMetal\">Металлический</style> элемент в <style=\"solid\">Твердом</style> состоянии.\n\nЯвляется источником <style=\"RawMetal\">Вольфрама</style> и отлично подходит для строительства <style=\"power\">Электрических</style> систем."
+msgstr "Вольфрамит ((Fe,Mn)WO<sub>4</sub>) - это плотный <style=\"RawMetal\">Металлический</style> элемент в <style=\"solid\">Твердом</style> состоянии.\n\nЯвляется источником <style=\"RawMetal\">Вольфрама</style> и отлично подходит для строительства <style=\"power\">Электрических</style> систем."
 
 #. STRINGS.ELEMENTS.WOLFRAMITE.NAME
 msgctxt "STRINGS.ELEMENTS.WOLFRAMITE.NAME"
@@ -12639,8 +12674,8 @@ msgstr "Полезные подсказки помогут вам сделать
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.MESSAGEBODY"
-msgid "One of your duplicants has consumed enough germs that it is beginning to impact their health. The more disease they consume, the harder it is for their immune system to fight off the germs. If their immune system reaches 0%, infection occurs, and medical intervention will be necessary. Use the <style=\"misc\">Vitals Screen</style> to keep an eye on Duplicant immune levels."
-msgstr "Один из ваших Дупликантов заразился микробами, и они начинают влиять на его здоровье. Чем больше болезней получит Дупликант, тем сложнее его иммунной системе бороться с микробами. Если его иммунная система опустится до 0%, то возникнет инфекция. В этом случае необходимо оказание медицинской помощи. Используйте экран <style=\"misc\">Статус</style>, чтобы следить за уровнем иммунитета Дупликантов."
+msgid "Duplicants must spend points of immunity to fight the various <style=\"disease\">Germs</style> they're exposed to. If their immunity reaches 0%, they'll be unable to fight off any more germs and contract the next disease they encounter.\n\nDoors with Access Permissions can be built from the <style=\"misc\">BASE TAB</style> of the <style=\"misc\">BUILD MENU</style> to block Duplicants from entering biohazardous areas while they recover their spent immunity points."
+msgstr "Дупликанты должны расходовать очки иммунитета, чтобы бороться с различными <style=\"disease\">Микробами</style>, которым они подвергаются. Если их иммунитет достигнет 0%, они больше не смогут бороться с микробами и контакт с любой болезнью убьет их.\n\nВы можете построить двери, которые имеют настройки доступа, используя категорию <style=\"misc\">БАЗА</style> из <style=\"misc\">МЕНЮ СТРОИТЕЛЬСТВА</style>, чтобы блокировать доступ Дупликантов к биологически опасным областям, пока они восстанавливают свой иммунитет."
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.NAME"
@@ -12649,8 +12684,8 @@ msgstr "ПОДСКАЗКА: Иммунная система Дупликанта
 
 #. STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BEING_INFECTED.TOOLTIP"
-msgid "Learn how Duplicants get sick"
-msgstr "Узнайте, как Дупликанты заболевают"
+msgid "Keep your Duplicants in peak health"
+msgstr "Держите Ваших Дупликантов здоровыми"
 
 #. STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.BROKENMACHINE.NAME"
@@ -12852,6 +12887,21 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.DEATH_SUFFOCATION.TOOLTIP"
 msgid "These Duplicants died from a lack of <style=\"oxygen\">Oxygen</style>:"
 msgstr "Следующие Дупликанты умерли от недостатка <style=\"oxygen\">Кислорода</style>:"
 
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.MESSAGEBODY
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.MESSAGEBODY"
+msgid "The <style=\"food\">food</style> your Duplicants make is only as clean as the <style=\"solid\">ingredients</style> used to make it. Storing food in sterile or <style=\"heat\">Refrigerated</style> environments will keep the produced food clean, while carefully placed hygene systems will prevent your cooks from infecting the food while they handle it.\n\nDangerously contaminated food can be recycled by clicking the <style=\"misc\">COMPOST</style> button on the selected item."
+msgstr "<style=\"food\">Еда</style>, которую готовят ваши Дупликанты, будет не более чистой, чем ингредиенты, из которых она приготовлена. Хранение еды в стерильной или <style=\"heat\">Холодной</style> атмосфере, позволит ей оставаться чистой, в то время как тщательно размещенные системы гигиены предотвратят ее заражение вашими поварами. Опасную загрязненную еду можно перерабатывать, нажав кнопку <style=\"misc\">КОМПОСТ</style> на выбранном элементе."
+
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.NAME"
+msgid "TIP: Food Safety"
+msgstr "ПОДСКАЗКА: Безопасность еды"
+
+#. STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.DISEASE_COOKING.TOOLTIP"
+msgid "Learn how to manage food contamination"
+msgstr "Узнайте, как справляться с загрязнением еды"
+
 #. STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.DUPLICANTABSORBED.MESSAGEBODY"
 msgid "New Duplicants are no longer available for printing.\nCountdown to the next production was rebooted."
@@ -13022,6 +13072,16 @@ msgctxt "STRINGS.MISC.NOTIFICATIONS.HEALINGTRAITGAIN.TOOLTIP"
 msgid "These Duplicants' injuries weren't set and healed improperly. They developed traits as a result:"
 msgstr "Ранения следующих Дупликантов плохо зажили. В результате у них появились новые черты:"
 
+#. STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.NAME
+msgctxt "STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.NAME"
+msgid "Colony requires wash basins"
+msgstr "Колонии необходимы умывальники"
+
+#. STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.TOOLTIP
+msgctxt "STRINGS.MISC.NOTIFICATIONS.HYGENE_NEEDED.TOOLTIP"
+msgid "<style=\"disease\">Germs</style> are spreading in your colony because your Duplicants have no where to clean up"
+msgstr "<style=\"disease\">Микробы</style> распространяются по колонии, потому что вашим Дупликантам негде их смыть"
+
 #. STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.IMMIGRANTSLEFT.NAME"
 msgid "New Duplicants have been reabsorbed"
@@ -13041,21 +13101,6 @@ msgstr "Ожидания Дупликантов повысились"
 msgctxt "STRINGS.MISC.NOTIFICATIONS.INCREASEDEXPECTATIONS.TOOLTIP"
 msgid "Duplicants require better amenities over time.\nThese Duplicants have increased their expectations:"
 msgstr "Со временем Дупликанты требуют все больше удобств.\nСледующие Дупликанты повысили свои ожидания:"
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.MESSAGEBODY
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.MESSAGEBODY"
-msgid "A germ has found its way on to one of your rations. Small numbers of germs are not a threat to your colony as Duplicant immune systems can fight off substantial infection. However some diseases like Food Poisoning will grow quickly on food, creating a hazardous situation. Badly contaminated food can be Marked For Compost, and further contamination can be slowed or halted by storing your food in a refrigerated or other germ-hostile environment."
-msgstr "Микроб нашел свой путь к одному из ваших рационов. Небольшое количество микробов не угрожает вашей колонии, так как иммунные системы Дупликантов могут бороться с существенной инфекцией. Однако некоторые болезни, такие как пищевое отравление, быстро размножаются в еде, создавая опасные ситуации. Зараженная еда может быть помечена для компоста, а дальнейшее заражение можно замедлить или остановить, при хранении еды в охлажденной или враждебной для микробов среде."
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.NAME
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.NAME"
-msgid "TIP: Infected Food"
-msgstr "ПОДСКАЗКА: Зараженная еда"
-
-#. STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.TOOLTIP
-msgctxt "STRINGS.MISC.NOTIFICATIONS.INFECTED_FOOD.TOOLTIP"
-msgid "Deal with the spread of filth"
-msgstr "Разберитесь с распространением заразы"
 
 #. STRINGS.MISC.NOTIFICATIONS.INVALIDCONSTRUCTIONLOCATION.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.INVALIDCONSTRUCTIONLOCATION.NAME"
@@ -13080,7 +13125,7 @@ msgstr " - {0} возросло до {1}"
 #. STRINGS.MISC.NOTIFICATIONS.LEVELUP.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LEVELUP.TOOLTIP"
 msgid "These Duplicants' skills have improved:"
-msgstr "Эти Дупликанты увеличили свои навыки:"
+msgstr "Эти Дупликанты увеличили свои характеристики:"
 
 #. STRINGS.MISC.NOTIFICATIONS.LEVELUP.TOOLTIP_PST
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LEVELUP.TOOLTIP_PST"
@@ -13104,18 +13149,18 @@ msgstr "Изучите то, как перемещаются Ваши Дупли
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.MESSAGEBODY"
-msgid "There are many sources of germs in the world. If your duplicants consume these germs, it can make thems sick. Maintaining good base hygene and cleaning the various substances in your base is essential for controlling the spread of germs. Each disease has different materials it prefers to grow on, and different tools for reducing its spread in your base. The <style=\"misc\">GERM OVERLAY</style> <color=#F44A47><b>[F9]</b></color> will allow you to see germ concentrations and spot new sources of germs."
-msgstr "В мире существует множество источников микробов. Если ваши Дупликанты заразятся, это может сделать их больными. Поддержание хорошей гигиены в колонии и дезинфекция объектов в вашей базе имеет важное значение для борьбы с распространением микробов. Каждая болезнь имеет разные условия роста, а также инструменты для борьбы с ней. <style=\"misc\">КАРТА МИКРОБОВ</style> <color=#F44A47><b>[F9]</b></color> позволит вам видеть концентрации микробов и выявлять новые их источники."
+msgid "<style=\"disease\">Germs</style> are an invisible peril that cause <style=\"disease\">Disease</style> in your Duplicants. The <style=\"misc\">GERM OVERLAY</style> <color=#F44A47><b>[F9]</b></color> will allow you to view all germ concentrations in your colony and the sources spawning them.\n\nWash Basins can be built in dirty areas from the <style=\"misc\">MEDICINE TAB</style> <color=#F44A47><b>[9]</b></color> to tell your Duplicants to where to wash up. If you keep your base clean and your Duplicants hygienic, your colony's Immunity will handle the rest."
+msgstr "<style=\"disease\">Микробы</style> - невидимая опасность, которая вызывает <style=\"disease\">Болезни</style> у Ваших Дупликантов. <style=\"misc\">КАРТА МИКРОБОВ</style> <color=#F44A47><b>[F9]</b></color> позволит Вам увидеть места их концентрации в колонии, а также источники, которые их производят.\n\nСтройте умывальники, из категории <style=\"misc\">ЛЕЧЕНИЕ</style> <color=#F44A47><b>[9]</b></color>, в загрязненных областях, чтобы вашим Дупликантам было где помыть руки. Содержите базу в чистоте и на высоком уровне гигиены, а иммунитет Дупликантов справится со всем остальным."
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.NAME"
-msgid "TIP: Germs and Infections"
+msgid "TIP: Germs and Disease"
 msgstr "ПОДСКАЗКА: Микробы и инфекции"
 
 #. STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.LOTS_OF_GERMS.TOOLTIP"
-msgid "Learn about disease risks"
-msgstr "Узнайте о рисках заболеваний"
+msgid "Learn about the risks of Duplicant disease"
+msgstr "Узнайте о рисках заболеваний Дупликантов"
 
 #. STRINGS.MISC.NOTIFICATIONS.MISSINGMATERIALS.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.MISSINGMATERIALS.NAME"
@@ -13180,7 +13225,7 @@ msgstr "Недостаточное производство кислорода"
 #. STRINGS.MISC.NOTIFICATIONS.NEEDOXYGENSOURCE.TOOLTIP
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEEDOXYGENSOURCE.TOOLTIP"
 msgid "• Your colony has produced {EmittingRate} of <style=\"oxygen\">Oxygen</style> this cycle\n• Your Duplicants have consumed {ConsumptionRate}"
-msgstr "• Сегодня Ваша колония произвела {EmittingRate} <style=\"oxygen\">Кислорода</style>\n•Ваши Дупликанты потребили {ConsumptionRate}"
+msgstr "• Сегодня Ваша колония произвела {EmittingRate} <style=\"oxygen\">Кислорода</style>\n• Ваши Дупликанты потребили {ConsumptionRate}"
 
 #. STRINGS.MISC.NOTIFICATIONS.NEEDSLEEP.NAME
 msgctxt "STRINGS.MISC.NOTIFICATIONS.NEEDSLEEP.NAME"
@@ -14051,6 +14096,11 @@ msgstr "Уголь"
 msgctxt "STRINGS.MISC.TAGS.COMPOSTABLE"
 msgid "Compostable"
 msgstr "Компостируемый"
+
+#. STRINGS.MISC.TAGS.COMPOSTMEAT
+msgctxt "STRINGS.MISC.TAGS.COMPOSTMEAT"
+msgid "Compost Meat"
+msgstr "Компостированное мясо"
 
 #. STRINGS.MISC.TAGS.CONSUMABLEORE
 msgctxt "STRINGS.MISC.TAGS.CONSUMABLEORE"
@@ -16360,7 +16410,7 @@ msgstr "Удобства сделают ваших Дупликантов сча
 #. STRINGS.UI.BUILDCATEGORIES.HVAC.NAME
 msgctxt "STRINGS.UI.BUILDCATEGORIES.HVAC.NAME"
 msgid "Ventilation"
-msgstr "Вентиляция"
+msgstr "Газ"
 
 #. STRINGS.UI.BUILDCATEGORIES.HVAC.TOOLTIP
 msgctxt "STRINGS.UI.BUILDCATEGORIES.HVAC.TOOLTIP"
@@ -16645,7 +16695,7 @@ msgstr "<style=\"misc\">Творчество</style> Дупликанта"
 #. STRINGS.UI.BUILDINGEFFECTS.REQUIRESELEMENT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESELEMENT"
 msgid "Supply of <style={0}>{1}</style>"
-msgstr "Поставка <style={0}>{1}</style>"
+msgstr "Снабжение <style={0}>{1}</style>"
 
 #. STRINGS.UI.BUILDINGEFFECTS.REQUIRESGASINPUT
 msgctxt "STRINGS.UI.BUILDINGEFFECTS.REQUIRESGASINPUT"
@@ -17785,7 +17835,7 @@ msgstr "Эти симптомы пропадут при получении Ду�
 #. STRINGS.UI.DETAILTABS.DISEASE.INFECTION.DISCLAIMER
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.INFECTION.DISCLAIMER"
 msgid "Contracting this illness will have these effects on a Duplicant:\n"
-msgstr "Наличие этой болезни вызовет следующие симптомы у Дупликанта:\n"
+msgstr "Наличие этой болезни у Дупликанта вызовет следующие симптомы:\n"
 
 #. STRINGS.UI.DETAILTABS.DISEASE.INFECTION.DISCLAIMER_TOOLTIP
 msgctxt "STRINGS.UI.DETAILTABS.DISEASE.INFECTION.DISCLAIMER_TOOLTIP"
@@ -18155,7 +18205,7 @@ msgstr "Спасибо!"
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.BODY
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.BODY"
 msgid "This game is in the early stages of development which means you're likely to encounter strange, amusing, and occasionally just downright frustrating bugs.\n\nDuring this time Oxygen Not Included will be receiving regular updates to fix bugs, add features, and introduce additional content, so if you encounter issues or just have suggestions to share, please let us know on our forums: <u>http://forums.kleientertainment.com</u>\n\nA special thanks to those who joined us during our time in Alpha. We value your feedback and thank you for joining us in the development process. We couldn't do this without you.\n\nEnjoy your time in deep space!\n\n- Klei"
-msgstr "\n\n\n\nЭта игра находится на ранней стадии разработки, что означает, что вы, вероятно, столкнетесь со странными, забавными, а иногда и просто прямо-таки досадными ошибками.\n\nВ течение этого времени, Oxygen Not Included будет получать регулярные обновления, чтобы исправить ошибки, добавить новые возможности и ввести дополнительный контент. Так что, если у вас возникнут вопросы или просто у вас есть предложения, пожалуйста, сообщите нам об этом на нашем форуме: <u>http://forums.kleientertainment.com </u>\n\nОтдельная благодарность тем, кто присоединился к нам на стадии альфа тестирования. Мы ценим ваши замечания и благодарим вас за присоединение к нам в процесс разработки. Мы не могли сделать это без вас.\n\nПолучайте наслаждение от нахождения в глубоком космосе!\n\n- Klei"
+msgstr "\n\n\n\nЭта игра находится на ранней стадии разработки, что означает, что вы, вероятно, столкнетесь со странными, забавными, а иногда и просто прямо-таки досадными ошибками.\n\nВ течение этого времени, Oxygen Not Included будет получать регулярные обновления, чтобы исправить ошибки, добавить новые возможности и ввести дополнительный контент. Так что, если у вас возникнут вопросы или просто у вас есть предложения, пожалуйста, сообщите нам об этом на нашем форуме: <u>http://forums.kleientertainment.com </u>\n\nОтдельная благодарность тем, кто присоединился к нам на стадии альфа-тестирования. Мы ценим ваши замечания и благодарим вас за присоединение к нам в процесс разработки. Мы не могли сделать это без вас.\n\nПолучайте наслаждение от нахождения в глубоком космосе!\n\n- Klei"
 
 #. STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.CONTINUEBUTTON
 msgctxt "STRINGS.UI.DEVELOPMENTBUILDS.ALPHA.LOADING.CONTINUEBUTTON"
@@ -18270,7 +18320,7 @@ msgstr "Болезнь: {0}"
 #. STRINGS.UI.ELEMENTAL.DISEASE.TOOLTIP
 msgctxt "STRINGS.UI.ELEMENTAL.DISEASE.TOOLTIP"
 msgid "The selected item's has {0} on its surface"
-msgstr "Выделенный объект имеет на поверхности: {0}"
+msgstr "Выбранный объект имеет на поверхности: {0}"
 
 #. STRINGS.UI.ELEMENTAL.FREEZEPOINT.NAME
 msgctxt "STRINGS.UI.ELEMENTAL.FREEZEPOINT.NAME"
@@ -18385,7 +18435,7 @@ msgstr "Калорий сгенерировано:"
 #. STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.NEGATIVE_TOOLTIP"
 msgid "Your colony consumed {0} of <style=\"food\">Food</style> over the course of the day"
-msgstr "Ваша колония потребляет {0} <style=\"food\">Еды</style> за день"
+msgstr "Ваша колония потребила {0} <style=\"food\">Еды</style> за день"
 
 #. STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.CALORIES_CREATED.POSITIVE_TOOLTIP"
@@ -18475,7 +18525,7 @@ msgstr "Микробы:"
 #. STRINGS.UI.ENDOFDAYREPORT.DISEASE_STATUS.TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.DISEASE_STATUS.TOOLTIP"
 msgid "Your inhabitants are covered in {0} germs"
-msgstr "Ваши подопечные покрыты {0} микробами"
+msgstr "Ваши подопечные покрыты {0}"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NAME"
@@ -18485,7 +18535,7 @@ msgstr "<style=\"power\">Электричества</style> использует
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NEGATIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.NEGATIVE_TOOLTIP"
 msgid "Your colony consumed {0} of <style=\"power\">Power</style> over the course of the day"
-msgstr "Вашей колонией потреблено {0} <style=\"power\">Электричества</style> за день"
+msgstr "Ваша колония потребила {0} <style=\"power\">Электричества</style> за день"
 
 #. STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.ENERGY_USAGE.POSITIVE_TOOLTIP"
@@ -18510,17 +18560,17 @@ msgstr "Время бездействия:"
 #. STRINGS.UI.ENDOFDAYREPORT.IDLE_TIME.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.IDLE_TIME.POSITIVE_TOOLTIP"
 msgid "Your Duplicants spent a total of {0} idling over the course of the day"
-msgstr "Ваш Дупликант провел, бездействуя {0} времени за день"
+msgstr "Ваши Дупликанты провели, бездействуя {0} времени за день"
 
 #. STRINGS.UI.ENDOFDAYREPORT.LEVEL_UP.NAME
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.LEVEL_UP.NAME"
 msgid "Skill Increases:"
-msgstr "Улучшение параметров:"
+msgstr "Улучшение характеристики:"
 
 #. STRINGS.UI.ENDOFDAYREPORT.LEVEL_UP.TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.LEVEL_UP.TOOLTIP"
 msgid "Your Duplicants gained a total of {0} skill levels today"
-msgstr "Ваши Дупликанты получили {0} очков параметров за день"
+msgstr "Ваши Дупликанты получили {0} очков характеристики за день"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NET
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NET"
@@ -18535,7 +18585,7 @@ msgstr "Вперед"
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.BURNED
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.BURNED"
 msgid "Burned by {0}"
-msgstr "Похоронил останки: {0}"
+msgstr "Потрачено калорий {0}"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.BUTCHERED
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.BUTCHERED"
@@ -18550,7 +18600,7 @@ msgstr "Произведено {0}"
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.GERMS
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.GERMS"
 msgid "On {0}"
-msgstr "Включено {0}"
+msgstr "На {0}"
 
 #. STRINGS.UI.ENDOFDAYREPORT.NOTES.HARVESTED
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.NOTES.HARVESTED"
@@ -18650,7 +18700,7 @@ msgstr "Время путешествий:"
 #. STRINGS.UI.ENDOFDAYREPORT.TRAVEL_TIME.POSITIVE_TOOLTIP
 msgctxt "STRINGS.UI.ENDOFDAYREPORT.TRAVEL_TIME.POSITIVE_TOOLTIP"
 msgid "Your Duplicants spent a total of {0} traveling over the course of the day"
-msgstr "Ваш Дупликант потратил {0} времени, путешествуя в течение дня"
+msgstr "Ваши Дупликанты потратили {0} времени, путешествуя в течение дня"
 
 #. STRINGS.UI.EQUIPMENTTAB_HELD
 msgctxt "STRINGS.UI.EQUIPMENTTAB_HELD"
@@ -18734,7 +18784,7 @@ msgstr "Стандартная"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.DEFAULT.TOOLTIP"
-msgid "Default immunity recovery"
+msgid "Duplicants regain immunity normally"
 msgstr "Стандартное время восстановления иммунной системы"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.ATTRIBUTE_MODIFIER_NAME
@@ -18749,8 +18799,8 @@ msgstr "Сильная"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.STRONG.TOOLTIP"
-msgid "Increases immunity recovery"
-msgstr "Увеличенная скорость восстановления иммунной системы"
+msgid "Duplicant immune recovery is increased"
+msgstr "Увеличенная скорость восстановления иммунной системы Дупликантов"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.ATTRIBUTE_MODIFIER_NAME"
@@ -18764,17 +18814,17 @@ msgstr "Слабая"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.LEVELS.WEAK.TOOLTIP"
-msgid "Reduces Duplicant immunity recovery"
-msgstr "Уменьшенная скорость восстановления иммунной системы"
+msgid "Duplicant immune recovery is reduced"
+msgstr "Уменьшенная скорость восстановления иммунной системы Дупликантов"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.NAME"
-msgid "Immune System"
-msgstr "Иммунная система"
+msgid "Immune Systems"
+msgstr "Иммунные системы"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.IMMUNESYSTEM.TOOLTIP"
-msgid "Affects how resilient your Dupes are to disease"
+msgid "Affects how resistant your Duplicants are to disease"
 msgstr "Влияет на устойчивость Дупликантов к болезням"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.NAME
@@ -18784,8 +18834,8 @@ msgstr "Стандартная"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.DEFAULT.TOOLTIP"
-msgid "The regular rate of stress"
-msgstr "Стандартный уровень стресса"
+msgid "Duplicants gain and lose stress normally"
+msgstr "Стандартный уровень получения и восстановления от стресса"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.ATTRIBUTE_MODIFIER_NAME"
@@ -18799,7 +18849,7 @@ msgstr "Оптимист"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.OPTIMISTIC.TOOLTIP"
-msgid "Reduces duplicant stress levels"
+msgid "Duplicants are harder to stress out"
 msgstr "Уменьшенный уровень стресса Дупликантов"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.ATTRIBUTE_MODIFIER_NAME
@@ -18814,18 +18864,18 @@ msgstr "Пессимист"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.LEVELS.PESSIMISTIC.TOOLTIP"
-msgid "Increases Duplicant stress levels"
+msgid "Duplicants stress out easily"
 msgstr "Увеличенный уровень стресса Дупликантов"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.NAME
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.NAME"
-msgid "Disposition"
-msgstr "Диспозиция"
+msgid "Duplicant Mood"
+msgstr "Настроение Дупликантов"
 
 #. STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP
 msgctxt "STRINGS.UI.FRONTEND.CUSTOMGAMESETTINGSSCREEN.SETTINGS.STRESS.TOOLTIP"
-msgid "Affects Duplicant stress levels"
-msgstr "Влияет на уровни стресса Дупликантов"
+msgid "Affects how well your Duplicants deal with stress"
+msgstr "Влияет на способность Дупликантов бороться со стрессом"
 
 #. STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.BODY
 msgctxt "STRINGS.UI.FRONTEND.DEMO_OVER_SCREEN.BODY"
@@ -19150,7 +19200,7 @@ msgstr "Ключ для генерации мира"
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.BODY"
 msgid "<b>Welcome to the Outbreak Upgrade!</b>\n\n{0}"
-msgstr "<b>Добро пожаловать в обновление \"Прорыв\"!</b>\n\n{0}"
+msgstr "<b>Добро пожаловать в апгрейд \"Эпидемия\"!</b>\n\n{0}"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.OK_BUTTON"
@@ -19159,8 +19209,8 @@ msgstr "ОК"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.PATCHNOTES"
-msgid "Update Features:\n\n• New disease simulation, complete with new illnesses, attributes, overlays and more.\n• New Farming Overlay, plants, food recipes and plant requirements\n• Explore deep enough into your surroundings and you may chance upon the remnants of, well... something.\n• Explore deep enough into your surroundings and you may chance upon the remnants of, well... something.\n• Bug fixes, performance improvements, new buildings and more."
-msgstr "Основные новшества обновления:\n\n• Новая система симуляции болезней, в комплекте с новыми заболеваниями, атрибутами, картами и т. д.\n• Новая карта урожая, растения, рецепты еды и требования к культивации растений\n• Исследование глубин окружающего вас пространства может привести вас к очень интересным руинам чего-то древнего...\n• Исправление багов, улучшение производительности, новые постройки и многое другое!"
+msgid "<b>Important Notes:</b>\n\n• <u>Duplicants will now automatically disinfect buildings. You can tune the minimum germ threshold at the top right of the germ overlay.</u>\n\n <b>Update Features:</b>\n\n• New disease simulation, complete with new illnesses, attributes, overlays and more.\n• New plants, food recipes, growth requirements and Farming Overlay.\n• Explore deep enough into your surroundings and you may chance upon the remnants of, well... something.\n• New Duplicants; say hello to Ari, Jean, Camille and Ashkan.\n• Bug fixes, performance improvements, new buildings, creatures and more."
+msgstr "<b>Важные примечания:<b>\n\n• <u>Дупликанты теперь будут автоматически дезинфицировать постройки. Вы можете изменить минимальный порог микробов в правом верхнем углу карты микробов.</u>\n\n <b>Основные новшества обновления:<b>\n\n• Новая система симуляции болезней, в комплекте с новыми заболеваниями, атрибутами, картами и т.д.\n• Новая карта урожая, растения, рецепты еды и требования к культивации растений.\n• Исследование глубин окружающего вас пространства может привести вас к очень интересным руинам чего-то древнего...\n• Новые Дупликанты: скажите привет Ари, Джину, Камилле и Ашкану.\n• Исправление багов, улучшение производительности, новые постройки и многое другое!"
 
 #. STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE
 msgctxt "STRINGS.UI.FRONTEND.PATCHNOTESSCREEN.TITLE"
@@ -19979,8 +20029,8 @@ msgstr "Не поддается измерению"
 
 #. STRINGS.UI.OVERLAYS.CROP.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CROP.BUTTON"
-msgid "Crop Overlay"
-msgstr "Карта урожая"
+msgid "Farming Overlay"
+msgstr "Карта сбора урожая"
 
 #. STRINGS.UI.OVERLAYS.CROP.FULLY_GROWN
 msgctxt "STRINGS.UI.OVERLAYS.CROP.FULLY_GROWN"
@@ -20004,18 +20054,18 @@ msgstr "КАРТА УРОЖАЯ"
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.FULLY_GROWN
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.FULLY_GROWN"
-msgid "This plant is ready for harvest"
-msgstr "Это растение готово к сбору урожая"
+msgid "<b>Fully Grown</b>\nThese plants have reached maturation\n------------------\nSelect the <style=\"misc\">HARVEST TOOL</style> <color=#F44A47><b>[Y]</b></color> to batch harvest"
+msgstr "<b>Полностью созрело</b>\nЭто растение готово к сбору урожая\n------------------\nВыберите инструмент <style=\"misc\">СБОР УРОЖАЯ</style> <color=#F44A47><b>[Y]</b></color>, чтобы массово отметить растения для сбора"
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWING
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWING"
-msgid "This plant is thriving in satisfactory conditions"
-msgstr "Это растение растет, так как условия роста соблюдены"
+msgid "<b>Growing</b>\nThese plants are thriving in their current conditions"
+msgstr "<b>Растет</b>\nЭто растение растет, так как условия его роста соблюдены"
 
 #. STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWTH_HALTED
 msgctxt "STRINGS.UI.OVERLAYS.CROP.TOOLTIPS.GROWTH_HALTED"
-msgid "Substandard conditions are preventing this plant from growing"
-msgstr "Неудовлетворенные потребности препятствуют росту этого растения"
+msgid "<b>Halted Growth</b>\nSubstandard conditions prevent these plants from growing"
+msgstr "<b>Рост приостановлен</b>\nНеудовлетворенные потребности препятствуют росту этого растения"
 
 #. STRINGS.UI.OVERLAYS.CROPS.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.CROPS.BUTTON"
@@ -20069,13 +20119,13 @@ msgstr "КАРТА ДЕКОРА"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.HIGHDECOR"
-msgid "Sufficient decor values\n* Lighting and aesthetically pleasing buildings increase decor"
-msgstr "Достаточный уровень декора\n* Освещение и эстетически привлекательные постройки увеличивают декор"
+msgid "<b>High Decor</b>\nArea with sufficient decor values\n* Lighting and aesthetically pleasing buildings increase decor"
+msgstr "<b>Высокий декор</b>\nДостаточный уровень декора\n* Освещение и эстетически привлекательные постройки увеличивают декор"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOOLTIPS.LOWDECOR"
-msgid "Insufficient decor values\n* Resources on the floor are considered \"debris\" and will decrease decor"
-msgstr "Недостаточный уровень декора\n* Материалы на полу считаются \"мусором\" и уменьшают декор"
+msgid "<b>Low Decor</b>\nArea with insufficient decor values\n* Resources on the floor are considered \"debris\" and will decrease decor"
+msgstr "<b>Низкий декор</b>\nНедостаточный уровень декора\n* Материалы на полу считаются \"мусором\" и уменьшают декор"
 
 #. STRINGS.UI.OVERLAYS.DECOR.TOTAL
 msgctxt "STRINGS.UI.OVERLAYS.DECOR.TOTAL"
@@ -20102,6 +20152,26 @@ msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISEASE_FORMAT_NO_COLOR"
 msgid "{1} [{0}]"
 msgstr "{1} [{0}]"
 
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.THRESHOLD_PREFIX
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.THRESHOLD_PREFIX"
+msgid "Disinfect At:"
+msgstr "Дезинфицировать при:"
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP"
+msgid "Automatically disinfect any building with more than {NumberOfGerms} germs."
+msgstr "Автоматически дезинфицировать постройку при {NumberOfGerms} микробов."
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP_DISABLED
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.TOOLTIP_DISABLED"
+msgid "Automatic building disinfection disabled."
+msgstr "Автоматическая дезинфекция построек отключена."
+
+#. STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.UNITS
+msgctxt "STRINGS.UI.OVERLAYS.DISEASE.DISINFECT_THRESHOLD_DIAGRAM.UNITS"
+msgid "Germs"
+msgstr "Микробы"
+
 #. STRINGS.UI.OVERLAYS.DISEASE.HOVERTITLE
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.HOVERTITLE"
 msgid "Germ"
@@ -20119,8 +20189,8 @@ msgstr "Источник микробов"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE_TOOLTIP
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INFECTION_SOURCE_TOOLTIP"
-msgid "Areas where germs are produced"
-msgstr "Места, где появляются микробы"
+msgid "<b>Germ Source</b>\nAreas where germs are produced\n* Placing Wash Basins or Hand Sanitizers near these areas may prevent disease spread"
+msgstr "<b>Источник микробов</b>\nМеста, где появляются микробы\n* Постройка умывальников и дезинфекторов рук около таких зон поможет избежать распространения болезней"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS"
@@ -20129,8 +20199,8 @@ msgstr "Переносчик микробов"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS_TOOLTIP
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.INTERNAL_GERMS_TOOLTIP"
-msgid "Duplicants become a germ host when germs enter their body through inhalation or ingestion\n------------------\nGerm hosts may not show symptoms of disease\n------------------\nInternal germs cannot be washed off"
-msgstr "Дупликанты становятся переносчиками микробов, когда микробы попадают в их тело через дыхание или еду\n------------------\nПереносчики микробов могут не обладать симптомами болезни\n------------------\nВнутренние микробы невозможно смыть"
+msgid "<b>Germ Host</b>\nGerm hosts may be asymptomatic and show no signs of disease\n------------------\nDuplicants become hosts when germs enter their body through inhalation or ingestion\n* Unlike surface germs, internal germs cannot be washed off"
+msgstr "<b>Переносчик микробов</b>\nДупликанты становятся переносчиками микробов, когда микробы попадают в их тело через дыхание или еду\n------------------\nПереносчики микробов могут не обладать симптомами болезни\n------------------\nВ отличии от микробов на поверхности, внутренние микробы невозможно смыть"
 
 #. STRINGS.UI.OVERLAYS.DISEASE.NAME
 msgctxt "STRINGS.UI.OVERLAYS.DISEASE.NAME"
@@ -20144,7 +20214,7 @@ msgstr "На поверхности нет микробов"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.BUTTON"
-msgid "Power Grid Overlay"
+msgid "Power Overlay"
 msgstr "Карта электрической сети"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.DIAGRAM_HEADER
@@ -20199,13 +20269,13 @@ msgstr "Нехватка электричества"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.NAME
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.NAME"
-msgid "POWER GRID OVERLAY"
+msgid "POWER OVERLAY"
 msgstr "КАРТА ЭЛЕКТРИЧЕСКОЙ СЕТИ"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND_SWITCH
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND_SWITCH"
-msgid "Building activates or deactivates a circuit"
-msgstr "Постройка включает или отключает провод"
+msgid "<b>Switch</b>\nActivates or deactivates connected circuits"
+msgstr "<b>Переключатель</b>\nПостройка включает или отключает провод"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND1
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND1"
@@ -20214,28 +20284,28 @@ msgstr "Отображает постройки, которые использу
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND2
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND2"
-msgid "Building draws power from a circuit"
-msgstr "Постройка использует электричество из сети"
+msgid "<b>Consumer</b>\nThese buildings draw power from a circuit"
+msgstr "<b>Потребитель</b>\nПостройка использует электричество из сети"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND3
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND3"
-msgid "Building generates power for a circuit"
-msgstr "Постройка производит электричество для сети"
+msgid "<b>Producer</b>\nThese buildings generate power for a circuit"
+msgstr "<b>Производитель</b>\nПостройка производит электричество для сети"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND4"
-msgid "Displays the power loads on wire systems"
+msgid "Displays the power load on wire systems"
 msgstr "Отображает нагрузку в электрических сетях"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND5"
-msgid "Circuit produces more power than it can consume"
-msgstr "Сеть производит электричества больше, чем может потребить"
+msgid "<b>Energy Surplus</b>\nThese circuits produce more power than they can consume"
+msgstr "<b>Избыток электричества</b>\nСеть производит электричества больше, чем может потребить"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND6"
-msgid "Circuit consumes nearly all power it produces"
-msgstr "Сеть потребляет практически все доступное электричество"
+msgid "<b>Strained</b>\nThese circuits consume nearly all power they produce"
+msgstr "<b>Напряженность</b>\nСеть потребляет практически все доступное электричество"
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND7"
@@ -20244,8 +20314,8 @@ msgstr "Сеть перегружена чрезмерным потреблен�
 
 #. STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8
 msgctxt "STRINGS.UI.OVERLAYS.ELECTRICAL.TOOLTIPS.LEGEND8"
-msgid "Circuit consumes more power than it can produce"
-msgstr "Сеть потребляет больше электричества, чем она может произвести"
+msgid "<b>Underpowered</b>\nThese circuits consume more power than they can produce"
+msgstr "<b>Недостаток электричества</b>\nСеть потребляет больше электричества, чем она может произвести"
 
 #. STRINGS.UI.OVERLAYS.EXOSUIT.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.EXOSUIT.BUTTON"
@@ -20334,8 +20404,8 @@ msgstr "Подключено к <style=\"GasPiping\">Газовой трубе</
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONSUMER
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.CONSUMER"
-msgid "Outputs send gas into pipes\n* Must be on the same network as at least one <style=\"GasDestination\">Intake</style>"
-msgstr "Отправляет газ в трубу из постройки\n* Должно быть соединено хотя бы с одним <style=\"GasDestination\">Каналом ввода</style>"
+msgid "<b>Output Pipe</b>\nOutputs send gas into pipes\n------------------\nMust be on the same network as at least one <style=\"GasDestination\">Intake</style>"
+msgstr "<b>Канал вывода</b>\nОтправляет газ в трубу из постройки\n------------------\nДолжно быть соединено хотя бы с одним <style=\"GasDestination\">Каналом ввода</style>"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.DISCONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.DISCONNECTED"
@@ -20344,8 +20414,8 @@ msgstr "Не подключено к <style=\"GasPiping\">Газовой тру�
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.FILTERED
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.FILTERED"
-msgid "Filtered Outputs send filtered gas into pipes\n* Must be on the same network as at least one <style=\"GasDestination\">Intake</style>"
-msgstr "Отправляет один отфильтрованный газ в трубы из постройки\n* Должно быть соединено хотя бы с одним <style=\"GasDestination\">Каналом ввода</style>"
+msgid "<b>Filtered Output Pipe</b>\nFiltered Outputs send filtered gas into pipes\n------------------\nMust be on the same network as at least one <style=\"GasDestination\">Intake</style>"
+msgstr "<b>Отфильтрованный канал вывода</b>\nОтправляет один отфильтрованный газ в трубы из постройки\n------------------\nДолжно быть соединено хотя бы с одним <style=\"GasDestination\">Каналом ввода</style>"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.NETWORK
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.NETWORK"
@@ -20354,8 +20424,8 @@ msgstr "Газопровод {0}"
 
 #. STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.PRODUCER
 msgctxt "STRINGS.UI.OVERLAYS.GASPLUMBING.TOOLTIPS.PRODUCER"
-msgid "Intakes send gas into buildings\n* Must be on the same network as at least one <style=\"GasSource\">Output</style>"
-msgstr "Отправляет газ в постройку из трубы\n* Должно быть соединено хотя бы с одним <style=\"GasSource\">Каналом отдачи</style>"
+msgid "<b>Building Intake</b>\nIntakes send gas into buildings\n------------------\nMust be on the same network as at least one <style=\"GasSource\">Output</style>"
+msgstr "<b>Канал ввода</b>\nОтправляет газ в постройку из трубы\n------------------\nДолжно быть соединено хотя бы с одним <style=\"GasSource\">Каналом отдачи</style>"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.BUTTON"
@@ -20389,18 +20459,18 @@ msgstr "Зона комфорта"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.COOLING"
-msgid "Uncomfortably cold area\n* Duplicants lose more heat than they can absorb"
-msgstr "Некомфортная холодная область\n* Дупликанты теряют больше тепла, чем они могут получить из этой среды"
+msgid "<b>Body Heat Loss</b>\nUncomfortably cold\n------------------\nDuplicants lose more heat in these areas than they can absorb\n* Warm Sweaters help Duplicants retain body heat"
+msgstr "<b>Потеря тепла телом</b>\nНекомфортная холодная область\n------------------\nДупликанты теряют больше тепла, чем они могут получить из этой среды\n* Теплые свитера помогут Дупликантам сохранять тепло"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.HEATING"
-msgid "Uncomfortably warm area\n* Duplicants absorb more heat than they can release"
-msgstr "Некомфортная жаркая область\n* Дупликанты получают из этой среды больше тепла, чем они могут отдать"
+msgid "<b>Body Heat Retention</b>\nUncomfortably warm\n------------------\nDuplicants absorb more heat in these areas than they can release\n* Cool Vests help Duplicants shed excess body heat"
+msgstr "<b>Потливость</b>\nНекомфортная жаркая область\n------------------\nДупликанты получают из этой среды больше тепла, чем они могут отдать\n* Охлаждающие жилеты помогут Дупликантам не потеть"
 
 #. STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL
 msgctxt "STRINGS.UI.OVERLAYS.HEATFLOW.TOOLTIPS.NEUTRAL"
-msgid "Comfortable area\n* Duplicants can regulate their internal temperatures in this environment"
-msgstr "Комфортная область\n* Дупликанты могут регулировать свою внутреннюю температуру в этой среде"
+msgid "<b>Comfort Zone</b>\nComfortable area\n------------------\nDuplicants can regulate their internal temperatures in these areas"
+msgstr "<b>Комфортная зона</b>\nКомфортная область\n------------------\nДупликанты могут регулировать свою внутреннюю температуру в этой среде"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.BUTTON"
@@ -20424,13 +20494,13 @@ msgstr "КАРТА ОСВЕЩЕНИЯ"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.DARK"
-msgid "Duplicants cannot see in these areas"
-msgstr "Дупликанты не могут видеть в этих зонах"
+msgid "<b>Unlit Area</b>\nDuplicants cannot see in these areas"
+msgstr "<b>Неосвещенная зона</b>\nДупликанты не могут видеть в этих зонах"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.LITAREA"
-msgid "Duplicants have adequate lighting in these areas"
-msgstr "Дупликантам достаточно освещения в этих зонах"
+msgid "<b>Lit Area</b>\nDuplicants have adequate lighting in these areas"
+msgstr "<b>Освещенная зона</b>\nДупликантам достаточно освещения в этих зонах"
 
 #. STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME
 msgctxt "STRINGS.UI.OVERLAYS.LIGHTING.TOOLTIPS.NAME"
@@ -20494,8 +20564,8 @@ msgstr "Подключено к <style=\"LiquidPiping\">Водопроводно
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONSUMER
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.CONSUMER"
-msgid "Outputs send liquid into pipes\n* Must be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
-msgstr "Отправляет жидкость из постройки в трубу\n* Должно быть соединено хотя бы с одним <style=\"LiquidSource\">Каналом приема</style> жидкости"
+msgid "<b>Output Pipe</b>\nOutputs send liquid into pipes\n------------------\nMust be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
+msgstr "<b>Канал вывода</b>\nОтправляет жидкость из постройки в трубу\n------------------\nДолжно быть соединено хотя бы с одним <style=\"LiquidSource\">Каналом ввода</style>"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.DISCONNECTED
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.DISCONNECTED"
@@ -20504,8 +20574,8 @@ msgstr "Не подключено к <style=\"LiquidPiping\">Водопрово�
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.FILTERED
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.FILTERED"
-msgid "Filtered Outputs send filtered liquid into pipes\n* Must be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
-msgstr "Отправляет одну отфильтрованную жидкость из постройки в трубу\n* Должно быть соединено хотя бы с одним <style=\"LiquidSource\">Каналом приема</style> жидкости"
+msgid "<b>Filtered Output Pipe</b>\nFiltered Outputs send filtered liquid into pipes\n------------------\nMust be on the same network as at least one <style=\"LiquidDestination\">Intake</style>"
+msgstr "<b>Отфильтрованный канал вывода</b>\nОтправляет одну отфильтрованную жидкость из постройки в трубу\n------------------\nДолжно быть соединено хотя бы с одним <style=\"LiquidSource\">Каналом ввода</style>"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.NETWORK
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.NETWORK"
@@ -20514,8 +20584,8 @@ msgstr "Водопровод {0}"
 
 #. STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.PRODUCER
 msgctxt "STRINGS.UI.OVERLAYS.LIQUIDPLUMBING.TOOLTIPS.PRODUCER"
-msgid "Intakes send liquid into buildings\n* Must be on the same network as at least one <style=\"LiquidSource\">Output</style>"
-msgstr "Отправляет жидкость в постройку из трубы\n* Должно быть соединено хотя бы с одним <style=\"LiquidSource\">Каналом отдачи</style> жидкости"
+msgid "<b>Building Intake</b>\nIntakes send liquid into buildings\n------------------\nMust be on the same network as at least one <style=\"LiquidSource\">Output</style>"
+msgstr "<b>Канал ввода</b>\nОтправляет жидкость в постройку из трубы\n------------------\nДолжно быть соединено хотя бы с одним <style=\"LiquidSource\">Каналом отдачи</style> жидкости"
 
 #. STRINGS.UI.OVERLAYS.NOISE_POLLUTION.BUTTON
 msgctxt "STRINGS.UI.OVERLAYS.NOISE_POLLUTION.BUTTON"
@@ -20650,17 +20720,17 @@ msgstr "Карта кислорода"
 #. STRINGS.UI.OVERLAYS.OXYGEN.LEGEND1
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.LEGEND1"
 msgid "Very Breathable"
-msgstr "Высокая концентрация"
+msgstr "Очень легко дышать"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.LEGEND2
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.LEGEND2"
 msgid "Breathable"
-msgstr "Достаточная концентрация"
+msgstr "Дышится нормально"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.LEGEND3
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.LEGEND3"
 msgid "Barely Breathable"
-msgstr "Низкая концентрация"
+msgstr "Дышится с трудом"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.LEGEND4"
@@ -20684,33 +20754,33 @@ msgstr "КАРТА КИСЛОРОДА"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND1
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND1"
-msgid "High oxygen concentrations"
-msgstr "Высокая концентрация кислорода"
+msgid "<b>Very Breathable</b>\nHigh oxygen concentrations"
+msgstr "<b>Очень легко дышать</b>\nВысокая концентрация кислорода"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND2
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND2"
-msgid "Sufficient oxygen concentrations"
-msgstr "Достаточная концентрация кислорода"
+msgid "<b>Breathable</b>\nSufficient oxygen concentrations"
+msgstr "<b>Дышится нормально</b>\nДостаточная концентрация кислорода"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND3
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND3"
-msgid "Low oxygen concentrations"
-msgstr "Низкая концентрация кислорода"
+msgid "<b>Barely Breathable</b>\nLow oxygen concentrations"
+msgstr "<b>Дышится с трудом</b>\nНизкая концентрация кислорода"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND4"
-msgid "Extremely low or absent oxygen concentrations"
-msgstr "Экстремально низкая концентрация или отсутствие кислорода"
+msgid "<b>Unbreathable</b>\nExtremely low or absent oxygen concentrations\n------------------\nDuplicants will suffocate if trapped in these areas"
+msgstr "<b>Кислорода нет</b>\nЭкстремально низкая концентрация или отсутствие кислорода\n------------------\nДупликанты задохнутся, если запереть их в подобной зоне"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND5
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND5"
-msgid "Harmful gas concentration"
-msgstr "Вредоносная концентрация газа"
+msgid "<b>Slightly Toxic</b>\nHarmful gas concentration"
+msgstr "<b>Немного токсичный</b>\nВредоносная концентрация газа"
 
 #. STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND6
 msgctxt "STRINGS.UI.OVERLAYS.OXYGEN.TOOLTIPS.LEGEND6"
-msgid "Lethal gas concentration"
-msgstr "Летальная концентрация газа"
+msgid "<b>Very Toxic</b>\nLethal gas concentration"
+msgstr "<b>Очень токсичный</b>\nЛетальная концентрация газа"
 
 #. STRINGS.UI.OVERLAYS.POWER.WATTS_CONSUMED
 msgctxt "STRINGS.UI.OVERLAYS.POWER.WATTS_CONSUMED"
@@ -21220,7 +21290,7 @@ msgstr "Кликните, чтобы выделить <b>{0}</b>"
 #. STRINGS.UI.TOOLS.ATTACK.NAME
 msgctxt "STRINGS.UI.TOOLS.ATTACK.NAME"
 msgid "Attack"
-msgstr "Атаковать"
+msgstr "Атака"
 
 #. STRINGS.UI.TOOLS.ATTACK.TOOLACTION
 msgctxt "STRINGS.UI.TOOLS.ATTACK.TOOLACTION"
@@ -23294,8 +23364,8 @@ msgstr "Доставлять материалы в данную постройк
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.NAME"
-msgid "Allow Auto-Bottling"
-msgstr "Нет автозаполнения"
+msgid "Enable Autobottling"
+msgstr "Вкл. автозаполнение"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.ALLOWED.TOOLTIP"
@@ -23304,8 +23374,8 @@ msgstr "Если включено, Дупликанты будут достав�
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.NAME"
-msgid "Stop Auto-Bottling"
-msgstr "Есть автозаполнение"
+msgid "Disable Autobottling"
+msgstr "Выкл. автозаполнение"
 
 #. STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.MANUAL_PUMP_DELIVERY.DENIED.TOOLTIP"
@@ -23449,33 +23519,33 @@ msgstr "Преобразует это растение в семя"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.NAME"
-msgid "Direction: Both"
-msgstr "Направление: оба"
+msgid "Set Direction: Both"
+msgstr "Установить направление: оба"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_BOTH.TOOLTIP"
-msgid "Duplicants will wash up when passing this building in either direction"
-msgstr "Дупликанты будут мыть руки, когда проходят мимо этой постройки в любом направлении"
+msgid "Select to make Duplicants wash when passing by in either direction"
+msgstr "Выберите, чтобы Дупликанты мыли руки, когда проходят мимо этой постройки в любом направлении"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.NAME"
-msgid "Direction: Left"
-msgstr "Направление: слева"
+msgid "Set Direction: Left"
+msgstr "Установить направление: лево"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_LEFT.TOOLTIP"
-msgid "Duplicants will wash up when passing this building from right to left"
-msgstr "Дупликанты будут мыть руки, когда проходят мимо этой постройки справа налево"
+msgid "Select to make Duplicants wash when passing by from right to left"
+msgstr "Выберите, чтобы Дупликанты мыли руки, когда проходят мимо этой постройки справа налево"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.NAME
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.NAME"
-msgid "Direction: Right"
-msgstr "Направление: справа"
+msgid "Set Direction: Right"
+msgstr "Установить направление: право"
 
 #. STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.TOOLTIP
 msgctxt "STRINGS.UI.USERMENUACTIONS.WORKABLE_DIRECTION_RIGHT.TOOLTIP"
-msgid "Duplicants will wash up when passing this building from left to right"
-msgstr "Дупликанты будут мыть руки, когда проходят мимо этой постройки слева направо"
+msgid "Select to make Duplicants wash when passing by from left to right"
+msgstr "Выберите, чтобы Дупликанты мыли руки, когда проходят мимо этой постройки слева направо"
 
 #. STRINGS.UI.VIEWDUPLICANTS
 msgctxt "STRINGS.UI.VIEWDUPLICANTS"
